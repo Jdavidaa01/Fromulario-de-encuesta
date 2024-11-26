@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en, es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encuesta</title>
+</head>
+<body>
+<header>
+    <h1 id="title">Formulario de ingreso</h1>
+    <p id="description">Estre proyecto muestra el ingreso y manejo de formulario</p>
+</header>
+    <form action="required" id="survey-form">
+        <div>
+            <label for="name" id="name-label">Nombre : </label>
+            <input type="text" id="name" required="" placeholder="Ingresa tu nombre">
+        </div>
+        <div id="formGroup">
+            <label for="email" id="email-label">Email :</label>
+            <input type="email" id="email" required placeholder="Ingresa un email" pattern="[@]">
+        </div>
+        <div id="formGroup">
+            <label for="age" id="number-label">Edad :</label>
+            <input type="number" required inputmode="numeric" id="number" min="0" max="9" placeholder="Edad" pattern="[0-9]">
+        </div>
+        <div id="formGroup">
+            <label for="select" id="select-label">Elija una opcion</label>
+            <select name="" id="dropdown">
+                <option value="" selected="" disabled="">Seleccione una opcion</option>
+                <option value="" id="option">Opcion 1</option>
+                <option value="" id="option">Opcion 2</option>
+                <option value="" id="option">Opcion 3</option>
+            </select>
+        </div>
+
+        <div id="formGroup">
+            <p>Seleccione maximo dos opciones :</p>
+            <label for="radio" id="radio-label">Opcion radio 1</label>
+            <input type="radio" name="recommend" class="input-radio" value="1">
+            <label for="radio" id="radio-label">Opcion radio 2</label>
+            <input type="radio" name="recommend" class="input-radio" value="2">
+            <label for="radio" id="radio-label">Opcion radio 3</label>
+            <input type="radio" name="recommend" class="input-radio" value="3">
+        </div>
+        <div id="formGroup">
+            <p>Digite las opciones del checkbox</p>
+            <label for="checkbox" id="checkbox-label">Checkbox 1</label>
+            <input type="checkbox" value="checkbox" class="check">
+            <label for="checkbox" id="checkbox-label">Checkbox 2</label>
+            <input type="checkbox" value="checkbox" class="check">
+            <label for="checkbox" id="checkbox-label">Checkbox 3</label>
+            <input type="checkbox" value="checkbox" class="check">        
+        </div>
+        <div id="formGroup">
+            <p>Ingrese sus comentarios</p>
+            <textarea id="comment" rows="2" cols="50" placeholder="Dejanos tu opinion">
+
+            </textarea>
+        </div>
+        <button type="submit" id="send">Enviar</button>
+    </form>
+</body>
+</html>

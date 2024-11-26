@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius:  
+ 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor:  
+ pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Make form elements more compact */
+    form {
+        padding: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        margin-bottom: 5px;
+    }
+}
